@@ -1,0 +1,162 @@
+@media (min-width: 1200px) {
+
+@import "vars";
+
+.burger__mobile, .navmobile{
+    display: none;
+}
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu';
+    background-image: url(../images/bg_login.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $darkblue300;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    .logo{
+        width: 100px;
+        margin-left: 50px;
+    }
+
+    .input__search{
+        padding: 10px 25px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .web__search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: $white;
+        border-radius: 50px;
+        padding: 10px 55px;
+        margin: 0;
+
+        .web__loupe{
+            width: 30px;
+            margin: 0;
+        }
+    }
+
+    .menus{
+        display: flex;
+        gap: 20px;
+        img{
+            width: 50px;
+        }
+    }
+}
+
+h1 {
+    font-family: 'Ubuntu';
+    font-size: 80px;
+    text-align: center;
+    color: $white;
+}
+
+.btn {
+    border: none;
+    background: $orange300;
+    background: linear-gradient(6deg, $orange300 23%, $pink500 100%); 
+    color: $white;
+    padding: 15px 70px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 1s;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.btn:hover{
+    color: $black500;
+}
+
+.seepwd{
+    border: none;
+    background: $orange300;
+    background: linear-gradient(6deg, $orange300 23%, $pink500 100%); 
+    color: $white;
+    border-radius: 50px;
+    padding: 5px;
+    transition: color 1s;
+    cursor: pointer;
+}
+
+.seepwd:hover{
+    color: $black500;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+}
+
+form input {
+    display: block;
+    border: 1px solid $gray100;
+    padding: 10px;
+    font-size: 21px;
+    border-radius: 50px;
+    width: 100%;
+    opacity: .8;
+}
+
+form .error {
+    margin-top: 4px;
+    font-size: 14px;
+    color: $red100;
+    display: none;
+}
+
+footer{
+    margin-top: 150px;
+    padding: 60px;
+
+    a{
+        color: $white;
+        text-decoration: none;
+        transition: color 1s;
+    }
+    
+    a:hover{
+        color: $black500;
+    }
+    
+    h2{
+        text-align: center;
+        color: $white;
+        font-weight: 500;
+    }
+
+    .links__footer{
+        display: flex;
+        justify-content: left;
+        gap: 50px;
+        align-items: center;
+    }
+}
+}
