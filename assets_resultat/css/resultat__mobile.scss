@@ -1,0 +1,106 @@
+@media (max-width: 1199px) {
+    @import "vars";
+
+    .navweb, .search__input, .search, .overflow__general__web, .titlegenreweb,
+    .oveflow__general__web__numerotation{
+        display: none;
+    }
+
+    body,html{
+        font-family: 'Ubuntu';
+        margin: 0;
+        background-color: $darkblue500;
+        background: url(../images/bgerror__mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+// On aligne à la verticale les icônes cliquables de la navigation
+
+    .navmobile{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 20px;
+
+        .navmobile__burger{
+            margin-left: -80px;
+            margin-top: 50px;
+        }
+
+        .navmobile__logosansnom, .navmobile__search{
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .navmobile__text{
+            color: white;
+            font-size: 34px;
+            text-align: right;
+            margin-right: 20px;
+            font-weight: 500;
+            margin-top: -100px;
+        }
+
+        .navmobile__titlegenre{
+            color: white;
+            font-size: 34px;
+        }
+    }
+
+
+// Ici le contenu principal
+
+.overflow__general__mobile{
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    margin-bottom: 50px;
+
+    .overflow__general__mobile__img{
+        width: 250px;
+        border-radius: 20px;
+    }
+}
+
+.overflow__general__mobile__arrows{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+    // Ici on s'occupe du footer
+
+    footer{
+        padding-bottom: 20px;
+    
+        a{
+            color: $white;
+            text-decoration: none;
+            transition: color 1s;
+        }
+        
+        a:hover{
+            color: $black500;
+        }
+        
+        h2{
+            text-align: center;
+            color: $white;
+            font-weight: 500;
+        }
+    
+        .links__footer{
+            display: block;
+        }
+
+        .links__footer__a{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+}
