@@ -1,0 +1,121 @@
+@media (max-width: 1199px) {
+  .navweb, .search__input, .search, .details__web__mobile, .details__web__mobile, .overflow__web,
+.details__actor__web, .details__film__web {
+    display: none;
+  }
+
+  body, html {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    background-color: #0B003A;
+    background: url(../images/bgerror__mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navmobile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+  }
+  .navmobile .navmobile__burger {
+    margin-left: -80px;
+    margin-top: 50px;
+  }
+  .navmobile .navmobile__logosansnom, .navmobile .navmobile__search {
+    width: 100px;
+  }
+
+  .container__background {
+    background: url(../images/bgmobilefilm.jpg);
+    background-size: cover;
+    height: 550px;
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .container__imgfilm {
+    display: block;
+    margin: auto;
+    width: 350px;
+    border-radius: 20px;
+  }
+
+  .details__film__mobile, .details__actor__mobile {
+    background-color: #6b409b80;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .details__film__mobile .details__film__mobile__genre, .details__film__mobile .details__film__mobile__title, .details__film__mobile .details__film__mobile__years, .details__film__mobile .details__film__mobile__synopsis, .details__actor__mobile .details__film__mobile__genre, .details__actor__mobile .details__film__mobile__title, .details__actor__mobile .details__film__mobile__years, .details__actor__mobile .details__film__mobile__synopsis {
+    padding: 10px;
+    margin: 20px;
+  }
+  .details__film__mobile .details__film__mobile__synopsis, .details__actor__mobile .details__film__mobile__synopsis {
+    font-size: 15px;
+  }
+  .details__film__mobile .details__actor__mobile__informations, .details__actor__mobile .details__actor__mobile__informations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .details__film__mobile .detail__actor__informations__mobile__img, .details__actor__mobile .detail__actor__informations__mobile__img {
+    width: 150px;
+    border-radius: 20px;
+  }
+  .details__film__mobile .details__actor__informations__mobile__text, .details__actor__mobile .details__actor__informations__mobile__text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  .overflow__mobile {
+    background-color: #6b409b80;
+    padding: 20px;
+  }
+  .overflow__mobile .overflow__mobile__movie {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+  }
+  .overflow__mobile .overflow__mobile__movie .overflow__movie__mobile__img {
+    width: 350px;
+    border-radius: 20px;
+  }
+  .overflow__mobile .overflow__mobile__arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+
+  footer {
+    padding-bottom: 20px;
+  }
+  footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 1s;
+  }
+  footer a:hover {
+    color: #000000;
+  }
+  footer h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  footer .links__footer {
+    display: block;
+  }
+  footer .links__footer__a {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+}/*# sourceMappingURL=detail_film_mobile.css.map */

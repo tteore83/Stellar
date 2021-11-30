@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87.868" height="368.88" viewBox="0 0 87.868 368.88">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7f195a"/>
+      <stop offset="1" stop-color="#270d40"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_77" data-name="Groupe 77" transform="translate(-1751.132 117.44)">
+    <path id="Tracé_45" data-name="Tracé 45" d="M21.078,340.593V59.582A43.934,43.934,0,0,1,65.012,15.647h0a43.934,43.934,0,0,1,43.934,43.935V340.593a43.934,43.934,0,0,1-43.934,43.934h0A43.933,43.933,0,0,1,21.078,340.593Z" transform="translate(1860.078 267.087) rotate(180)" fill="url(#linear-gradient)"/>
+    <path id="Tracé_46" data-name="Tracé 46" d="M21.492,340.593V59.582a43.519,43.519,0,0,1,43.52-43.52h0a43.519,43.519,0,0,1,43.52,43.52V340.593a43.52,43.52,0,0,1-43.52,43.52h0A43.521,43.521,0,0,1,21.492,340.593Z" transform="translate(1860.078 267.087) rotate(180)" fill="url(#linear-gradient)"/>
+    <g id="Groupe_27" data-name="Groupe 27" transform="translate(1730.054 -127.087)">
+      <path id="Tracé_47" data-name="Tracé 47" d="M87.775,242.631a2.5,2.5,0,0,1-2.5-2.5V234.44a8.892,8.892,0,0,0-8.881-8.881H53.629a8.892,8.892,0,0,0-8.881,8.881v5.691a2.5,2.5,0,0,1-5,0V234.44a13.9,13.9,0,0,1,13.881-13.881H76.4A13.9,13.9,0,0,1,90.276,234.44v5.691A2.5,2.5,0,0,1,87.775,242.631Z" fill="#fff"/>
+      <path id="Tracé_48" data-name="Tracé 48" d="M65.012,219.868A13.882,13.882,0,1,1,78.9,205.985,13.9,13.9,0,0,1,65.012,219.868Zm0-22.765a8.882,8.882,0,1,0,8.883,8.882A8.892,8.892,0,0,0,65.012,197.1Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

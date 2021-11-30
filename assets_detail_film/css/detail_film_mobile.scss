@@ -1,0 +1,147 @@
+@media (max-width: 1199px) {
+    @import "vars";
+
+    .navweb, .search__input, .search, .details__web__mobile, .details__web__mobile, .overflow__web,
+    .details__actor__web, .details__film__web{
+        display: none;
+    }
+
+    body,html{
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        background-color: $darkblue500;
+        background: url(../images/bgerror__mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+// On aligne à la verticale les icônes cliquables de la navigation
+
+    .navmobile{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 20px;
+
+        .navmobile__burger{
+            margin-left: -80px;
+            margin-top: 50px;
+        }
+
+        .navmobile__logosansnom, .navmobile__search{
+            width: 100px;
+        }
+    }
+
+
+// Ici le contenu principal
+
+.container__background{
+    background: url(../images/bgmobilefilm.jpg);
+    background-size: cover;
+    height: 550px;
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.container__imgfilm{
+    display: block;
+    margin: auto;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.details__film__mobile, .details__actor__mobile{
+    background-color: #6b409b80;
+    color: $white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+    .details__film__mobile__genre, .details__film__mobile__title, .details__film__mobile__years, .details__film__mobile__synopsis{
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .details__film__mobile__synopsis{
+        font-size: 15px;
+    }
+
+    .details__actor__mobile__informations{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail__actor__informations__mobile__img{
+        width: 150px;
+        border-radius: 20px;
+    }
+
+    .details__actor__informations__mobile__text{
+        text-align: center;
+        font-weight: 500;
+        font-size: 10px;
+    }
+}
+
+// Ici on s'occupe des films de l'acteur en question
+
+.overflow__mobile{
+    background-color: #6b409b80;
+    padding: 20px;
+
+    .overflow__mobile__movie{
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;
+
+        .overflow__movie__mobile__img{
+            width: 350px;
+            border-radius: 20px;
+        }
+    }
+
+    .overflow__mobile__arrows{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+}
+
+    // Ici on s'occupe du footer
+
+    footer{
+        padding-bottom: 20px;
+    
+        a{
+            color: $white;
+            text-decoration: none;
+            transition: color 1s;
+        }
+        
+        a:hover{
+            color: $black500;
+        }
+        
+        h2{
+            text-align: center;
+            color: $white;
+            font-weight: 500;
+        }
+    
+        .links__footer{
+            display: block;
+        }
+
+        .links__footer__a{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+}

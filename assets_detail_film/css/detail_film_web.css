@@ -1,0 +1,219 @@
+@media (min-width: 1200px) {
+  .navmobile, .details__film__mobile, .details__actor__mobile, .overflow__mobile {
+    display: none;
+  }
+
+  body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    background-color: #0B003A;
+    background: url(../images/bgerror.svg);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  nav button {
+    background: #0B003A;
+    color: #FFFFFF;
+    padding: 10px 55px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+  nav .navright {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  nav .navright__rectangle {
+    margin-top: -150px;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search .search__input {
+    background: #5C5C5C;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 60px;
+    font-size: 28px;
+    color: white;
+  }
+  .search .search__search {
+    cursor: pointer;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+  }
+  .dropdown__button {
+    cursor: pointer;
+    background-color: #0B003A;
+    color: #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 65px;
+    width: 110px;
+    font-size: 28px;
+  }
+  .dropdown__menu {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    margin-top: 10px;
+    background-color: #0B003A;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 15px 0;
+    width: 280px;
+  }
+  .dropdown__menu ul {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+  }
+  .dropdown__menu ul li {
+    line-height: 35px;
+  }
+  .dropdown__menu ul li a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: background-color 1s;
+  }
+  .dropdown__menu ul li a:hover {
+    background-color: #5C5C5C;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .dropdown__menu--title {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: #7B7B7B;
+    padding: 0 10px;
+  }
+  .dropdown__menu--separator {
+    border-top: 1px solid #5C5C5C;
+    margin: 15px 0;
+  }
+  .dropdown__menu--open {
+    display: block;
+    width: 240px;
+  }
+
+  .container__background {
+    background: url(../images/bgmobilefilm.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+  }
+
+  .container__imgfilm {
+    display: block;
+    margin-right: auto;
+    margin-left: 20px;
+    width: 600px;
+    height: 800px;
+    border-radius: 20px;
+  }
+
+  .details__film__web, .details__actor__web {
+    background-color: #0b0c239f;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 0px;
+  }
+  .details__film__web .details__film__web__genre, .details__film__web .details__film__web__title, .details__film__web .details__film__web__years, .details__film__web .details__film__web__synopsis, .details__actor__web .details__film__web__genre, .details__actor__web .details__film__web__title, .details__actor__web .details__film__web__years, .details__actor__web .details__film__web__synopsis {
+    padding: 10px;
+    margin: 20px;
+  }
+  .details__film__web .details__film__web__synopsis, .details__actor__web .details__film__web__synopsis {
+    font-size: 20px;
+  }
+  .details__film__web .details__actor__web__informations, .details__actor__web .details__actor__web__informations {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .details__film__web .detail__actor__informations__web__img, .details__actor__web .detail__actor__informations__web__img {
+    width: 150px;
+    border-radius: 20px;
+  }
+  .details__film__web .details__actor__informations__web__text, .details__actor__web .details__actor__informations__web__text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .details__film__web .details__film__web, .details__actor__web .details__film__web {
+    text-align: center;
+  }
+
+  .overflow__web {
+    background-color: #0b0c239f;
+    padding: 20px;
+  }
+  .overflow__web .overflow__web__movie {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+  }
+  .overflow__web .overflow__web__movie .overflow__movie__web__img {
+    width: 350px;
+    border-radius: 20px;
+  }
+  .overflow__web .overflow__web__arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+
+  footer {
+    margin-top: 150px;
+    padding: 60px;
+  }
+  footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 1s;
+  }
+  footer a:hover {
+    color: #000000;
+  }
+  footer h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  footer .links__footer {
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    align-items: center;
+  }
+  footer .links__footer__a {
+    display: flex;
+    gap: 50px;
+  }
+}/*# sourceMappingURL=detail_film_web.css.map */
