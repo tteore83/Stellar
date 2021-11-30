@@ -1,0 +1,182 @@
+@import "vars";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200&display=swap');
+
+@media (min-width : 1024px){
+body{
+    font-family: 'M PLUS 2', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    .header{
+        &__right{
+            &--form{
+                width: 100%!important;
+                margin-left: 15%!important;
+                margin-top: -20%!important;
+                height: 600px;
+            }
+        }
+        &__logo--logo{
+           display: block !important;
+           width: 200px;
+        }
+        &__logo--logo--mobile{
+          display: none;
+        }
+        &__class{
+            display: block!important;
+            position: relative;
+            margin-left: 60%;
+            margin-top: 50px;
+            &--button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                width: 150px;
+                border-radius: 20px;
+                border: none;
+                height: 40px;
+                color: $white;
+                background-color: $purple700;
+                font-weight: bold;
+            }
+        }
+        &__user{
+            display: block!important;
+            position: relative;
+            &--connect{
+                background:linear-gradient($purple100, $purple700);
+                border: none;
+                border-radius: 20px;
+                margin-top: -10px;
+                height: 130px;
+                margin-left: 100px;
+                color: $white;
+                width: 50px;
+                font-weight: bold;
+            }
+        }
+        &__search{
+            margin-top: 150px!important;
+            &--input{
+                background: $gray100!important;
+                display: flex;
+                margin-left: 500px!important;
+                width: 300px!important;
+                height: 50px!important;
+                &::placeholder{
+                    color: $lightblue100!important;
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+                &--glass{
+                    width: 45px!important;
+                    height: 45px!important;
+                    margin-top: -4px!important;
+                    margin-left: -35px!important;
+                }
+                &--burger{
+                    display:none;
+                }
+            }
+        }
+        &__circle{
+            display: none!important;
+        }
+    }
+    
+    .back__picture{
+        &--buttons{
+            display: block!important;
+            width: 250px;
+            height: 40px;
+            margin-left: 40%;
+            margin-bottom: 20px;
+            margin-top: 25px;
+            border-radius: 20px;
+            border: none;
+            background:linear-gradient($orange100, $orange300);
+            color: $white;
+            font-size: 1.3em;
+            gap: 20px;
+          }
+        &--photo{
+            width: 70%;
+            margin-top: 10%!important;
+            position: relative;
+        }
+        &--overlay{
+            display: block!important;
+            background-color: #5c5c5cb7;
+            position:absolute;
+            border-radius: 12px;
+            margin-left: 15%;
+            margin-top: -38%;
+            width: 70%;
+            overflow-x: scroll;
+          &--biopic{
+              background-color: transparent!important;
+              &--text--title{
+                  margin-left: 10%;
+                 
+              }
+              &--text{
+                  margin-left: 10%;
+                 
+              }
+              span{
+                  margin-left: 10%;
+                  padding-bottom: 25px;
+              }
+              &--text--button{
+                  display: none;
+              }
+          }
+          &--cards__films{
+              display: flex!important;
+              gap: 20px;
+              
+              &--img{
+                  margin: auto;
+                  width: 240px;
+                  height: auto;
+                  border-radius: 12px;
+              }
+            .cards--title{
+                color: $white;
+            }
+          }
+          
+        }
+    }
+    .cards__films{
+        display: none!important;
+    }
+
+    .footer{
+        height: auto;
+        &__nav{
+            display: none;
+        }
+        &__navEnd{
+            display: block!important;
+            &--img{
+                width: 150%;
+                margin-top: -280px;
+                margin-left: -60px;
+            }
+            ul{
+                position: absolute;
+                margin-left: 150px;
+                display: flex;
+                gap: 30px;
+                margin-top: 350px;
+                li{
+                    list-style-type: none;
+                    color: $white;
+                }
+            }
+           
+        }
+    }
+}
+}

@@ -1,0 +1,190 @@
+@import "vars";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200&display=swap');
+
+
+body{
+    background: linear-gradient(#352640, #0E110E);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    font-family: 'M PLUS 2', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    .header{
+        display: flex;
+        height: 40vh;
+        position: relative;
+        &__right{
+            &--form{
+                width: 500px;
+                margin-left: 45px;
+                margin-top: -90px;
+                z-index: 0;
+                position: absolute;
+            }
+        }
+        &__logo--logo{
+            display: none;
+        }
+        &__logo--logo--mobile{
+            position: absolute;
+            margin-top: 80px;
+            margin-left: 20px;
+            width: 70px;
+        }
+        
+        &__class{
+            display: none;
+        }
+        &__user{
+            display: none;
+           
+        }
+        &__search{
+            position: absolute;
+            margin-top: 20px;
+            display: flex;
+            cursor: pointer;
+            
+           &--input{
+                height: 40px;
+                width: 180px;
+                border-radius: 20px;
+                margin-left: -15px;
+                border: none;
+                background: linear-gradient(#7F195A,#270D40);
+                &::placeholder{
+                    color: transparent;
+                }
+            &--glass{
+                padding: 6px;
+                height: 25px;
+                width: 25px;
+                margin-bottom: 50px;
+                margin-left: -130px;
+                margin-top: 160px;
+                color: $white;
+                border-radius: 50px;
+                background-color: $lightblue100;
+            }
+            &--burger{
+                color: $white;
+                width: 35px;
+                margin-bottom: 255px;
+                margin-left: -35px;
+            }
+           }
+        }
+        &__circle{
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            margin-left: 120px;
+            margin-top: 20px;
+        }
+    }
+    .back__picture{
+        &--photo{
+            display: flex;
+            margin: auto;
+            height: auto;
+        }
+        &--overlay--biopic{
+            background-color: $purple500;
+            width: 90%;
+            margin: auto;
+            border-radius: 12px;
+            color: $white;
+            text-align: center;
+            display: grid;
+            &--text--title{
+                font-size: 1.5em;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+           
+            &--text{
+                font-size: 1.2em;
+                &--button{
+                    width: 150px;
+                    border-radius: 20px;
+                    border: none;
+                    background:linear-gradient($orange100, $orange500);
+                    color: $white;
+                    font-size: 1.5em;
+                    margin:20px 20px 20px 30%;
+                    height: 40px;
+                }
+            }
+           
+        }
+        &--overlay--cards__films{
+           display: none;
+           
+        }
+        &--buttons{
+            display: none;
+        }
+    }
+    .cards__films{
+        display: flex;
+        position: relative;
+        background-color: $purple500;
+        margin-top: 30px;
+        height: auto;
+        overflow-x: scroll;
+        .card-text{
+            display: none;
+        }
+        &--imgOne{
+            height: 210px;
+            width: 200px;
+            margin: 20px 0px 20px 20px;
+            border-radius: 12px;
+        }
+        &--imgTwo{
+            height: 210px;
+            width: 200px;
+            margin: 20px 0px 20px 20px;
+            border-radius: 12px;
+        }
+    
+        &--arrow{
+            display: flex;
+            margin-top: 270px;
+            height: 30px;
+            margin-bottom: 12px;
+            &--left{
+                margin-left: -720px;
+            }
+            &--right{
+                padding-left: 190px;
+            }
+        }
+        &--buttonOff{
+            display: none;
+        }
+    }
+    .footer{
+        &__nav--ul{
+            display: flex;
+            background:linear-gradient($orange100, $pink300);
+            width: 60%;
+            margin: auto;
+            height: 80px;
+            border-radius: 12px 12px 0 0;
+            margin-top: 50px;
+        }
+        &__nav--ul--li{
+            list-style-type: none;
+            margin:auto;
+        }
+        &__nav--ul--li--icons{
+            height: 40px;
+            color: $white;
+        }
+        &__navEnd{
+            display: none;
+        }
+    }
+} 

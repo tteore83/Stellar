@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200&display=swap");
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#352640), to(#0E110E));
+  background: linear-gradient(#352640, #0E110E);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  font-family: 'M PLUS 2', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  position: relative;
+}
+
+body .header__right--form {
+  width: 500px;
+  margin-left: 45px;
+  margin-top: -90px;
+  z-index: 0;
+  position: absolute;
+}
+
+body .header__logo--logo {
+  display: none;
+}
+
+body .header__logo--logo--mobile {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 20px;
+  width: 70px;
+}
+
+body .header__class {
+  display: none;
+}
+
+body .header__user {
+  display: none;
+}
+
+body .header__search {
+  position: absolute;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+body .header__search--input {
+  height: 40px;
+  width: 180px;
+  border-radius: 20px;
+  margin-left: -15px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7F195A), to(#270D40));
+  background: linear-gradient(#7F195A, #270D40);
+}
+
+body .header__search--input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+body .header__search--input:-ms-input-placeholder {
+  color: transparent;
+}
+
+body .header__search--input::-ms-input-placeholder {
+  color: transparent;
+}
+
+body .header__search--input::placeholder {
+  color: transparent;
+}
+
+body .header__search--input--glass {
+  padding: 6px;
+  height: 25px;
+  width: 25px;
+  margin-bottom: 50px;
+  margin-left: -130px;
+  margin-top: 160px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  background-color: #41C6C9;
+}
+
+body .header__search--input--burger {
+  color: #FFFFFF;
+  width: 35px;
+  margin-bottom: 255px;
+  margin-left: -35px;
+}
+
+body .header__circle {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+body .back__picture--photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  height: auto;
+}
+
+body .back__picture--overlay--biopic {
+  background-color: #4D1951;
+  width: 90%;
+  margin: auto;
+  border-radius: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+body .back__picture--overlay--biopic--text--title {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+body .back__picture--overlay--biopic--text {
+  font-size: 1.2em;
+}
+
+body .back__picture--overlay--biopic--text--button {
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FBB56D), to(#FC9031));
+  background: linear-gradient(#FBB56D, #FC9031);
+  color: #FFFFFF;
+  font-size: 1.5em;
+  margin: 20px 20px 20px 30%;
+  height: 40px;
+}
+
+body .back__picture--overlay--cards__films {
+  display: none;
+}
+
+body .back__picture--buttons {
+  display: none;
+}
+
+body .cards__films {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #4D1951;
+  margin-top: 30px;
+  height: auto;
+  overflow-x: scroll;
+}
+
+body .cards__films .card-text {
+  display: none;
+}
+
+body .cards__films--imgOne {
+  height: 210px;
+  width: 200px;
+  margin: 20px 0px 20px 20px;
+  border-radius: 12px;
+}
+
+body .cards__films--imgTwo {
+  height: 210px;
+  width: 200px;
+  margin: 20px 0px 20px 20px;
+  border-radius: 12px;
+}
+
+body .cards__films--arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 270px;
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+body .cards__films--arrow--left {
+  margin-left: -720px;
+}
+
+body .cards__films--arrow--right {
+  padding-left: 190px;
+}
+
+body .cards__films--buttonOff {
+  display: none;
+}
+
+body .footer__nav--ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FBB56D), to(#CC3F66));
+  background: linear-gradient(#FBB56D, #CC3F66);
+  width: 60%;
+  margin: auto;
+  height: 80px;
+  border-radius: 12px 12px 0 0;
+  margin-top: 50px;
+}
+
+body .footer__nav--ul--li {
+  list-style-type: none;
+  margin: auto;
+}
+
+body .footer__nav--ul--li--icons {
+  height: 40px;
+  color: #FFFFFF;
+}
+
+body .footer__navEnd {
+  display: none;
+}
+/*# sourceMappingURL=actors.css.map */

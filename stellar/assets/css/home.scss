@@ -1,0 +1,101 @@
+
+body{
+    background-image: url(../images/background-3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; padding: 0;
+    overflow-x: hidden;
+    .header{
+        display: flex;
+        &__back{
+            width: 100%;
+            height: 20%;
+            z-index: 5;
+        }
+            &__logo{
+                width: 60px;
+                height: 60px;
+                margin-top: 20px;
+                margin-left:20px
+            }
+        
+            &__search{
+                
+                &__mobile{
+                   display: none;
+                }
+                &__mobile--loupe{
+                    margin-left: 220px;
+                    margin-top: 30px;
+                    color: white;
+                }
+                &__inputs{
+                    display: none;
+                }
+                &__button{
+                    display: none;
+                }
+                &__list{
+                    list-style-type: none;
+                }
+                &__list--none{
+                    list-style-type: none;
+                    display: none;
+                }
+            }
+          &__burger{
+              margin-top: 30px;
+              padding-left: 20px;
+              color: white;
+          }
+    }
+    .tendances{
+        color: white;
+        display: flex;
+       
+        &__cards{
+            margin-right: 20px;
+            margin-top: 70px;
+        }
+        &__cards--overlay{
+            color: white;
+        }
+    }
+    .notes{
+        display: flex;
+        color: white;
+        &__title{
+            
+        }
+        &__cards{
+            margin-top: 150px;
+            margin-right: 10px;
+        }
+        &__cards--overlay{
+            color: white;
+        }
+    }
+    .populaire{
+        display: flex;
+        color: white;
+        margin-top: 50px;
+        &__cards{
+            margin-right: 20px;
+        }
+    }
+    .actors{
+        display: flex;
+        color: white;
+        &__cards--img{
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+        }
+    }
+    .footer{
+        display: flex;
+        &__link{
+            color: white;
+        }
+    }
+}
