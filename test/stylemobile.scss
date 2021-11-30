@@ -1,0 +1,457 @@
+@media (max-width: 1199px) {
+    @import "vars";
+
+        .navweb{
+            display: none
+        }
+        @import "vars";
+        
+        *{
+            box-sizing: border-box;
+        }
+        
+        :root{
+            --primary-color:#22254b;
+            --secondary-color: #373b69;
+        }
+        
+        body{
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            background-color: $darkblue500;
+            background: url(./images/bgerror.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        
+        // On aligne à la verticale les icônes cliquables de la navigation
+
+    .navmobile{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 20px;
+
+        .navmobile__burger{
+            margin-left: -80px;
+            margin-top: 50px;
+        }
+
+        .navmobile__logosansnom, .navmobile__search{
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+        
+        // Barre de recherche
+        
+        
+        #search{
+        width: 100%;
+        background: $gray100;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 60px;
+        font-size: 28px;
+        color: $white;
+        margin-top: 50px;
+        }
+        
+        .search__search{
+        display: none;
+        }
+        
+        #form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        
+        // Le titre en dessous de la barre de recherche
+        
+        .titleprincal{
+            text-align: center;
+            font-size: 100px;
+            color: $white;
+        }
+        
+        // Menu déroulant
+        
+        .dropdown {
+            margin-top: 50px;
+        
+            &__button {
+                cursor: pointer;
+                background-color: $darkblue500;
+                color: $white;
+                border-radius: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 65px;
+                font-size: 28px;
+            }
+        
+            &__menu {
+                position: absolute;
+                z-index: 10;
+                display: none;
+                margin-top: 10px;
+                background-color: $darkblue500;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                border-radius: 6px;
+                padding: 15px 0;
+                width: 280px;
+        
+                ul {
+                    list-style: none;
+                    padding: 0 10px;
+                    margin: 0;
+        
+                    li {
+                        line-height: 35px;
+        
+                        a {
+                            display: flex;
+                            align-items: center;
+                            color: $white;
+                            padding: 0 10px;
+                            text-decoration: none;
+                            transition: background-color 1s;
+        
+                            &:hover {
+                                background-color: $gray100;
+                                border-radius: 6px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+        
+                &--title {
+                    text-transform: uppercase;
+                    font-size: 0.85em;
+                    color: $gray300;
+                    padding: 0 10px;
+                }
+        
+                &--separator {
+                    border-top: 1px solid $gray100 ;
+                    margin: 15px 0;
+                }
+        
+                &--open {
+                    display: block;
+                    width: 240px;
+                }
+            }
+        
+            }
+        
+        .search{
+            background-color: transparent;
+            border: 2px solid $darkblue500;
+            padding:0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            color:#fff;
+            font-family: inherit;
+        }
+        
+        .search:focus{
+            outline:0;
+            background-color: $darkblue500;
+        }
+        
+        .search::placeholder{
+            color: $darkblue100;
+        }
+        
+        main{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .movie {
+            width: 300px;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+            background-color: $darkblue100;
+            position:relative;
+            overflow: hidden;
+        }
+        
+        
+        .movie img{
+            width:100%;
+            border-radius: 20px;
+        }
+        
+        .movie-info{
+            color:$white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem 1rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .movie-info h3{
+            margin-top: 0;
+        }
+        
+        .movie-info span{
+            background-color: $darkblue500;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .movie-info span.green{
+            color: $lightgreen;
+        }
+        
+        .movie-info span.orange{
+            color:orange;
+        }
+        
+        .movie-info span.red{
+            color: $red100;
+        }
+        
+        .overview{
+            position:absolute;
+            left:0;
+            right:0;
+            bottom:0;
+            background-color: $white;
+            padding: 1rem;
+            max-height: 100%;
+            transform:translateY(101%);
+            transition:transform 0.3s ease-in;
+        }
+        
+        .movie:hover .overview{
+            transform:translateY(0)
+        }
+        
+        #tags{
+            width:80%;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+        
+        .tag{
+            color:$white;
+            padding:10px 20px;
+            background-color: $orange300;
+            border-radius: 50px;
+            margin:5px;
+            display:inline-block;
+            cursor: pointer;
+        }
+        
+        .tag.highlight{
+            background-color: $red300;
+        }
+        .no-results{
+            color:$white;
+        }
+        
+        .pagination{
+            display:flex;
+            margin:10px 30px;
+            align-items: center;
+            justify-content: center;
+            color:$white;
+        }
+        
+        .page{
+            padding:20px;
+            cursor:pointer;
+        }
+        
+        .page.disabled{
+            cursor:not-allowed;
+            color:grey;
+        }
+        
+        .current{
+            padding: 10px 20px;
+            border-radius: 50%;
+            border: 5px solid $purple100;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .know-more{
+            background-color: $purple100;
+            color:$white;
+            font-size: 16px;
+            font-weight: bold;
+            border:0;
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin-top: 5px;
+        }
+        
+        /* Overlay (arrière-plan) */
+        .overlay {
+            /* La hauteur et la largeur dépendent de la façon dont on révèle l'overlay' (voir JS ci-dessous) */   
+            height: 100%;
+            width: 0;
+            position: fixed; /* Reste en place */
+            z-index: 1;
+            left: 0;
+            top: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;  /* Désactiver le défilement horizontal */
+            transition: 0.5s; /* Effet de transition de 0,5 seconde pour faire glisser l'overlay vers l'intérieur ou vers l'extérieur (hauteur ou largeur, selon la révélation) */
+          }
+          
+        /* Positionner le contenu à l'intérieur de l'overlay */
+          .overlay-content {
+            position: relative;
+            top: 10%; /* 25% depuis le haut */
+            width: 100%; /* 100% en hauteur */
+            text-align: center; /* Text & lien centrés */
+            margin-top: 30px; /* marge supérieure de 30px pour éviter tout conflit avec le bouton de fermeture sur les petits écrans */
+          }
+          
+          /*  Les liens de navigation à l'intérieur de l'overlay'  */
+          .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block; /* Affichage en bloc plutôt qu'en ligne  */
+            transition: 0.3s; /* Effets de transition au survol (couleur) */
+          }
+          
+          /* Lorsqu'on passe la souris sur les liens de navigation, change leur couleur */
+          .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+          }
+          
+         /* Positionne le bouton de fermeture (coin supérieur droit) */
+          .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+          }
+          
+         /* Lorsque la hauteur de l'écran est inférieure à 450 pixels, 
+          change la taille de la police des liens et repositionne le bouton de fermeture, afin qu'ils ne se chevauchent pas */
+          @media screen and (max-height: 450px) {
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+              font-size: 40px;
+              top: 15px;
+              right: 35px;
+            }
+          }
+        
+        
+          .embed.hide{
+              display: none;
+          }
+        
+          .embed.show{
+              display: inline-block;
+          }
+        
+          .arrow{
+              position: absolute;
+              font-size: 40px;
+          }
+        
+          .arrow.left-arrow{
+              top:50%;
+              left:5%;
+              transform: translateY(-50%);
+          }
+        
+          
+          .arrow.right-arrow{
+            top:50%;
+            transform: translateY(-50%);
+            right:5%;
+        }
+        
+        .dots{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .dots .dot {
+            border-radius: 50%;
+            border: 5px solid $purple500;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .dots .dot.active{
+            border-color: $purple100;
+        }
+        
+        // Ici on s'occupe du footer
+        
+        footer{
+            margin-top: 150px;
+            padding: 60px;
+        
+            a{
+                color: $white;
+                text-decoration: none;
+                transition: color 1s;
+            }
+            
+            a:hover{
+                color: $black500;
+            }
+            
+            h2{
+                text-align: center;
+                color: $white;
+                font-weight: 500;
+            }
+        
+            .links__footer{
+                display: flex;
+                justify-content: left;
+                gap: 50px;
+                align-items: center;
+            }
+        
+            .links__footer__a{
+                display: flex;
+                gap: 50px;
+            }
+        }
+}

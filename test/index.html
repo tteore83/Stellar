@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylemobile.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="vars.css">
+</head>
+<body>
+    
+    <nav class="navweb">
+        <a href="../inscription.html">
+            <img class="logo" src="../assets_inscription/images/logo.png" alt="Logo Stellar">
+        </a>
+
+        <div class="navright">
+            <div class="dropdown">
+                <div class="dropdown__button">
+                    Genres
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </div>
+                <div class="dropdown__menu">
+                    <ul>
+                        <div id="tags"></div>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#">
+                <img class="navright__rectangle" src="../assets_error/images/contact.svg" alt="Rectangle coloré à la verticale + Icône utilisateur">
+            </a>
+        </div>
+    </nav>
+
+    <nav class="navmobile">
+        <a href="">
+            <img src="../assets_error/images/burger.svg" alt="Menu blanc" class="navmobile__burger">
+        </a>
+        <a href="../inscription.html">
+            <img src="../assets_error/images/logosansnom.svg" alt="Logo sans le titre" class="navmobile__logosansnom">
+        </a>
+    </nav>
+
+    <form  id="form">
+        <input type="text" placeholder="Search" id="search" class="search">
+        <img class="search__search" src="../assets_error/images/searchblue.svg" alt="Loupe de recherche">
+    </form>
+
+    <h1 class="titleprincal">FILMS</h1>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+
+    <footer> 
+        <div class="links__footer">
+            <h2>&copy;Stellar</h2>
+            <div class="links__footer__a">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Cond. Gén. Vente</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

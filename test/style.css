@@ -1,0 +1,462 @@
+@charset "UTF-8";
+@media (min-width: 1200px) {
+  .navmobile {
+    display: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary-color:#22254b;
+    --secondary-color: #373b69;
+  }
+
+  body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    background-color: #0B003A;
+    background: url(./images/bgerror.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  nav button {
+    background: #0B003A;
+    color: #FFFFFF;
+    padding: 10px 55px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+  nav .navright {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  nav .navright__rectangle {
+    margin-top: -150px;
+  }
+
+  #search {
+    background: #5C5C5C;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 60px;
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+
+  .search__search {
+    cursor: pointer;
+  }
+
+  #form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .titleprincal {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+  }
+  .dropdown__button {
+    cursor: pointer;
+    background-color: #0B003A;
+    color: #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 65px;
+    font-size: 28px;
+  }
+  .dropdown__menu {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    margin-top: 10px;
+    background-color: #0B003A;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 15px 0;
+    width: 280px;
+  }
+  .dropdown__menu ul {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+  }
+  .dropdown__menu ul li {
+    line-height: 35px;
+  }
+  .dropdown__menu ul li a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: background-color 1s;
+  }
+  .dropdown__menu ul li a:hover {
+    background-color: #5C5C5C;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .dropdown__menu--title {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: #7B7B7B;
+    padding: 0 10px;
+  }
+  .dropdown__menu--separator {
+    border-top: 1px solid #5C5C5C;
+    margin: 15px 0;
+  }
+  .dropdown__menu--open {
+    display: block;
+    width: 240px;
+  }
+
+  .search {
+    background-color: transparent;
+    border: 2px solid #0B003A;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #fff;
+    font-family: inherit;
+  }
+
+  .search:focus {
+    outline: 0;
+    background-color: #0B003A;
+  }
+
+  .search::-moz-placeholder {
+    color: #40318C;
+  }
+
+  .search:-ms-input-placeholder {
+    color: #40318C;
+  }
+
+  .search::placeholder {
+    color: #40318C;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+    background-color: #40318C;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .movie img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .movie-info {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .movie-info h3 {
+    margin-top: 0;
+  }
+
+  .movie-info span {
+    background-color: #0B003A;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+
+  .movie-info span.green {
+    color: #51ce51;
+  }
+
+  .movie-info span.orange {
+    color: orange;
+  }
+
+  .movie-info span.red {
+    color: #ff0000;
+  }
+
+  .overview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .movie:hover .overview {
+    transform: translateY(0);
+  }
+
+  #tags {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .tag {
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .tag.highlight {
+    background-color: #D22542;
+  }
+
+  .no-results {
+    color: #FFFFFF;
+  }
+
+  .pagination {
+    display: flex;
+    margin: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+
+  .page {
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .page.disabled {
+    cursor: not-allowed;
+    color: grey;
+  }
+
+  .current {
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 5px solid #7F0F4D;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .know-more {
+    background-color: #7F0F4D;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 5px;
+  }
+
+  /* Overlay (arrière-plan) */
+  .overlay {
+    /* La hauteur et la largeur dépendent de la façon dont on révèle l'overlay' (voir JS ci-dessous) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Reste en place */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    /* Désactiver le défilement horizontal */
+    transition: 0.5s;
+    /* Effet de transition de 0,5 seconde pour faire glisser l'overlay vers l'intérieur ou vers l'extérieur (hauteur ou largeur, selon la révélation) */
+  }
+
+  /* Positionner le contenu à l'intérieur de l'overlay */
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    /* 25% depuis le haut */
+    width: 100%;
+    /* 100% en hauteur */
+    text-align: center;
+    /* Text & lien centrés */
+    margin-top: 30px;
+    /* marge supérieure de 30px pour éviter tout conflit avec le bouton de fermeture sur les petits écrans */
+  }
+
+  /*  Les liens de navigation à l'intérieur de l'overlay'  */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Affichage en bloc plutôt qu'en ligne  */
+    transition: 0.3s;
+    /* Effets de transition au survol (couleur) */
+  }
+
+  /* Lorsqu'on passe la souris sur les liens de navigation, change leur couleur */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  /* Positionne le bouton de fermeture (coin supérieur droit) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  /* Lorsque la hauteur de l'écran est inférieure à 450 pixels, 
+   change la taille de la police des liens et repositionne le bouton de fermeture, afin qu'ils ne se chevauchent pas */
+}
+@media screen and (min-width: 1200px) and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .embed.hide {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .embed.show {
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .arrow {
+    position: absolute;
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .arrow.left-arrow {
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 1200px) {
+  .arrow.right-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  .dots {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .dots .dot {
+    border-radius: 50%;
+    border: 5px solid #4D1951;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .dots .dot.active {
+    border-color: #7F0F4D;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    margin-top: 150px;
+    padding: 60px;
+  }
+  footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 1s;
+  }
+  footer a:hover {
+    color: #000000;
+  }
+  footer h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  footer .links__footer {
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    align-items: center;
+  }
+  footer .links__footer__a {
+    display: flex;
+    gap: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

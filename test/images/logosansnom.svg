@@ -1,0 +1,22 @@
+<svg id="Groupe_32" data-name="Groupe 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106.667" height="85.495" viewBox="0 0 106.667 85.495">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fbb56d"/>
+      <stop offset="0.102" stop-color="#f19c6b"/>
+      <stop offset="0.273" stop-color="#e37a69"/>
+      <stop offset="0.447" stop-color="#d96067"/>
+      <stop offset="0.624" stop-color="#d14d66"/>
+      <stop offset="0.806" stop-color="#cd4165"/>
+      <stop offset="1" stop-color="#cc3e65"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7782c0"/>
+      <stop offset="0.011" stop-color="#7680be"/>
+      <stop offset="0.685" stop-color="#3c3c7c"/>
+      <stop offset="1" stop-color="#262262"/>
+    </linearGradient>
+  </defs>
+  <path id="Tracé_104" data-name="Tracé 104" d="M-797.869-7090.987a54.256,54.256,0,0,1-14.036-1.842l2.141-7.992c19.2,5.147,38.69-2.291,48.495-18.51s7.336-36.931-6.143-51.542l6.081-5.609a53.887,53.887,0,0,1,13.839,29.539,49.185,49.185,0,0,1-6.7,31.893,49.192,49.192,0,0,1-25.13,20.751A53.008,53.008,0,0,1-797.869-7090.987Z" transform="translate(811.905 7176.482)" fill="url(#linear-gradient)"/>
+  <path id="Tracé_105" data-name="Tracé 105" d="M-796.341-7093.028l-7.968-2.232a53.882,53.882,0,0,1,17.881-27.283,49.184,49.184,0,0,1,30.661-11.038,49.226,49.226,0,0,1,30.851,10.5,53.9,53.9,0,0,1,18.358,26.968l-7.927,2.371c-5.7-19.044-22.253-31.71-41.21-31.562C-774.644-7125.142-790.979-7112.17-796.341-7093.028Z" transform="translate(809.927 7165.309)" fill="#41c6c9"/>
+  <path id="Tracé_106" data-name="Tracé 106" d="M-704.537-7090.987a53.012,53.012,0,0,1-18.551-3.312,49.2,49.2,0,0,1-25.13-20.751,49.186,49.186,0,0,1-6.7-31.893,53.889,53.889,0,0,1,13.841-29.539l6.081,5.609c-13.478,14.611-15.947,35.325-6.143,51.542s29.293,23.657,48.494,18.51l2.142,7.992A54.261,54.261,0,0,1-704.537-7090.987Z" transform="translate(797.167 7176.482)" fill="url(#linear-gradient-2)"/>
+</svg>
