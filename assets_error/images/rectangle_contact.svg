@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87.868" height="368.88" viewBox="0 0 87.868 368.88">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7f195a"/>
+      <stop offset="1" stop-color="#270d40"/>
+    </linearGradient>
+  </defs>
+  <g id="Rectangle_121_17_" transform="translate(108.946 384.527) rotate(180)">
+    <path id="Tracé_45" data-name="Tracé 45" d="M21.078,340.593V59.582A43.934,43.934,0,0,1,65.012,15.647h0a43.934,43.934,0,0,1,43.934,43.935V340.593a43.934,43.934,0,0,1-43.934,43.934h0A43.933,43.933,0,0,1,21.078,340.593Z" fill="url(#linear-gradient)"/>
+    <path id="Tracé_46" data-name="Tracé 46" d="M21.492,340.593V59.582a43.519,43.519,0,0,1,43.52-43.52h0a43.519,43.519,0,0,1,43.52,43.52V340.593a43.52,43.52,0,0,1-43.52,43.52h0A43.521,43.521,0,0,1,21.492,340.593Z" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

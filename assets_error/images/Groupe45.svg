@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2048.309" height="1201" viewBox="0 0 2048.309 1201">
+  <defs>
+    <linearGradient id="linear-gradient" x1="16.229" y1="16.062" x2="16.613" y2="15.394" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#010101"/>
+      <stop offset="0.183" stop-color="#08090f"/>
+      <stop offset="0.52" stop-color="#121426"/>
+      <stop offset="0.97" stop-color="#141741"/>
+      <stop offset="1" stop-color="#141643"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.12" y1="-0.758" x2="1.04" y2="-0.758" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fbb66e"/>
+      <stop offset="0.032" stop-color="#f6ad6e"/>
+      <stop offset="0.185" stop-color="#e78d6d"/>
+      <stop offset="0.341" stop-color="#dd736c"/>
+      <stop offset="0.499" stop-color="#d55e69"/>
+      <stop offset="0.66" stop-color="#d04d67"/>
+      <stop offset="0.824" stop-color="#cd4266"/>
+      <stop offset="1" stop-color="#cc3e66"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_45" data-name="Groupe 45" transform="translate(64.155 335)">
+    <g id="waves_header" transform="translate(-89.265 -389.518)">
+      <g id="Groupe_18" data-name="Groupe 18" transform="translate(25.11 65.303)">
+        <path id="Tracé_26" data-name="Tracé 26" d="M406.137,1137.484C544.419,1046.13,613.6,893.985,581.151,752.56c-11.33-49.4-34.119-97.786-33.868-147.855.452-91.225,76.367-170,156.7-234.669S875.184,244.258,919.649,160.544A238.577,238.577,0,0,0,944.837,85L27.961,58.55,25.11,1229.07C196.1,1278.959,267.857,1228.84,406.137,1137.484Z" transform="translate(-25.11 -58.55)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="Groupe_19" data-name="Groupe 19" transform="translate(407.116 54.518)" opacity="0.8">
+        <path id="Tracé_27" data-name="Tracé 27" d="M234.054,54.78C147.9,191.639,128.674,439.474,282.309,581.268c239.1,220.67,420.073-96.764,645.359,6.117,191.748,87.563,60.442,378.807,320.406,453.518,117.392,33.734,388.633-39.065,586.158-354.867l-99.5-631.517Z" transform="translate(-167.929 -54.518)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@media (max-width: 1199px) {
+  .navweb, .search__input, .search {
+    display: none;
+  }
+
+  body, html {
+    font-family: "Ubuntu";
+    margin: 0;
+    background-color: #0B003A;
+    background: url(../images/bgerror__mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .navmobile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+  }
+  .navmobile .navmobile__burger {
+    margin-left: -80px;
+    margin-top: 50px;
+  }
+  .navmobile .navmobile__logosansnom, .navmobile .navmobile__search {
+    width: 100px;
+  }
+
+  .main h1 {
+    margin-top: 0;
+    font-size: 8em;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+  .main h1 .color__title {
+    background: -webkit-linear-gradient(0deg, #770e2a 33%, #390639 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .main p {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-left: 15px;
+  }
+  .main p span {
+    display: block;
+  }
+
+  .main__fusée img {
+    margin-top: -170px;
+    margin-left: 200px;
+    width: 280px;
+  }
+
+  footer {
+    padding-bottom: 20px;
+  }
+  footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 1s;
+  }
+  footer a:hover {
+    color: #000000;
+  }
+  footer h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  footer .links__footer {
+    display: block;
+  }
+  footer .links__footer__a {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+}/*# sourceMappingURL=error__mobile.css.map */

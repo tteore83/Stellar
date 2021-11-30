@@ -1,0 +1,105 @@
+@media (max-width: 1199px) {
+    @import "vars";
+
+    .navweb, .search__input, .search{
+        display: none;
+    }
+
+    body,html{
+        font-family: 'Ubuntu';
+        margin: 0;
+        background-color: $darkblue500;
+        background: url(../images/bgerror__mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+// On aligne à la verticale les icônes cliquables de la navigation
+
+    .navmobile{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 20px;
+
+        .navmobile__burger{
+            margin-left: -80px;
+            margin-top: 50px;
+        }
+
+        .navmobile__logosansnom, .navmobile__search{
+            width: 100px;
+        }
+    }
+
+
+// Ici le contenu principal
+
+.main{
+
+    h1{
+        margin-top: 0;
+        font-size: 8em;
+        margin-bottom: 0;
+        margin-left: 20px;
+
+        .color__title{
+            background: -webkit-linear-gradient(0deg, rgba(119,14,42,1) 33%, rgba(57,6,57,1) 100%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+    }
+
+        p{
+            color: $white;
+            font-size: 32px;
+            margin-left: 15px;
+
+            span{
+                display: block;
+            }
+        }
+    }
+
+    .main__fusée{
+        img{
+            margin-top: -170px;
+            margin-left: 200px;
+            width: 280px;
+        }
+    }
+
+    // Ici on s'occupe du footer
+
+    footer{
+        padding-bottom: 20px;
+    
+        a{
+            color: $white;
+            text-decoration: none;
+            transition: color 1s;
+        }
+        
+        a:hover{
+            color: $black500;
+        }
+        
+        h2{
+            text-align: center;
+            color: $white;
+            font-weight: 500;
+        }
+    
+        .links__footer{
+            display: block;
+        }
+
+        .links__footer__a{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+}
