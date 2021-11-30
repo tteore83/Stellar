@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Stellar</title>
+    <link rel="stylesheet" href="./assets_connexion/css/connexion__mobile.css">
+    <link rel="stylesheet" href="./assets_connexion/css/connexion__web.css">
+    <script src="./assets_connexion/js/connexion.js"></script>
+</head>
+<body>
+    <main class="container">
+        <!-- Barre de navigation -->
+        <nav class="navweb">
+
+            <a href="inscription.html">
+                <img class="logo" src="./assets_inscription/images/logo.png" alt="Logo Stellar">
+            </a>
+
+        </nav>
+
+        <nav class="navmobile">
+            <a href="">
+                <img src="./assets_error/images/logosansnom.svg" alt="Logo sans le titre" class="navmobile__logosansnom">
+            </a>
+        </nav>
+
+        <h1>Connexion</h1>
+
+            <form action="#">
+
+                <div>
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" name="pseudo" id="pseudo">
+                    <p id="pseudoError" class="error">Vous devez indiquer au minimum 5 caractères</p>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password">
+                    <button class="seepwd" type="button">Voir le mot de passe</button>
+                    <p class="error" id="pwdError">Le mot de passe doit contenir 6 caractères minimum</p>
+                </div>
+
+                <button class="btn">Connexion</button>
+
+            </form>
+
+            <footer> 
+                <div class="links__footer">
+                    <h2>&copy;Stellar</h2>
+                    <a href="#">Mentions Légales</a>
+                    <a href="#">Cond. Gén. Vente</a>
+                </div>
+            </footer>
+</body>
+</html>

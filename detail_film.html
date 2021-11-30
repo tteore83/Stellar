@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail film</title>
+    <link rel="stylesheet" href="./assets_detail_film/css/detail_film_mobile.css">
+    <link rel="stylesheet" href="./assets_detail_film/css/detail_film_web.css">
+    <script src="./assets_detail_film/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navweb">
+        <a href="inscription.html">
+            <img class="logo" src="./assets_inscription/images/logo.png" alt="Logo Stellar">
+        </a>
+
+        <div class="navright">
+            <div class="dropdown">
+                <div class="dropdown__button">
+                    Genres
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </div>
+                <div class="dropdown__menu">
+                    <ul>
+                        <li class="dropdown__menu--title">Film de super-héros</li>
+                        <li>
+                            <a href="connexion.html" title="My account">
+                                Films
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Preferences">
+                                Séries
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown__menu--separator"></div>
+                    <ul>
+                        <li class="dropdown__menu--title">Film policier</li>
+                        <li>
+                            <a href="#" title="My data...">
+                                Films
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="My data...">
+                                Séries
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown__menu--separator"></div>
+                    <ul class="dropdown__menu--danger">
+                        <li class="dropdown__menu--title">Autres thèmes</li>
+                        <li>
+                            <a href="#" title="Transfer to organization...">
+                                Films
+                            </a>
+                        </li>
+                        <li>
+                            <a href="inscription.html" title="Deactivate SIM...">
+                                Séries
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#">
+                <img class="navright__rectangle" src="./assets_error/images/contact.svg" alt="Rectangle coloré à la verticale + Icône utilisateur">
+            </a>
+        </div>
+    </nav>
+
+    <nav class="navmobile">
+        <a href="#">
+            <img src="./assets_error/images/burger.svg" alt="Menu blanc" class="navmobile__burger">
+        </a>
+        <a href="#">
+            <img src="./assets_error/images/logosansnom.svg" alt="Logo sans le titre" class="navmobile__logosansnom">
+        </a>
+        <a href="#">
+            <img class="navmobile__search" src="./assets_error/images/searchblue.svg" alt="Loupe de recherche">
+        </a>
+    </nav>
+
+    <div class="search">
+        <input class="search__input" type="search" name="search__name" id="search__id" placeholder="Recherche_/">
+        <img class="search__search" src="./assets_error/images/searchblue.svg" alt="Loupe de recherche">
+    </div>
+
+    <main class="container">
+        <div class="container__background">
+            <img class="container__imgfilm" src="./assets_detail_film/images/mainimgdetailfilm.png" alt="Image principale du film sélectionné">
+
+            <div class="details__film">
+                <div class="details__film__web">
+                    <h1 class="details__film__web__genre">
+                        Aventure, Science-Fiction, Action
+                    </h1>
+                    <h2 class="details__film__web__title">
+                        Avengers : Endgame
+                    </h2>
+                    <h3 class="details__film__web__years">
+                        2019
+                    </h3>
+                    <p class="details__film__web__synopsis">
+                        Après leur défaite face au Titan Thanos qui dans le film précédent s'est approprié toutes les pierres du Gant de l'infini , les Avengers et les Gardiens de la Galaxie ayant survécu à son claquement de doigts qui a pulvérisé « la moitié de toute forme de vie dans l'Univers », Captain America, Thor, Bruce Banner, Natasha Romanoff, War Machine, Tony Stark, Nébula et Rocket, vont essayer de trouver une solution pour ramener leurs coéquipiers disparus et vaincre Thanos en se faisant aider par Ronin alias Clint Barton, Captain Marvel et Ant-Man.
+                    </p>
+                </div>
+    
+                <div class="details__actor__web">
+                    <div class="details__actor__web__informations">
+                        <a href="#">
+                            <img class="detail__actor__informations__web__img" src="./assets_detail_film/images/actor.svg" alt="Portrait de l'acteur.">
+                        </a>
+                        <div class="details__actor__informations__web__text">
+                            <h1 class="details__actor__informations__web__name">
+                                Robert Downey Jr.
+                            </h1>
+                            <h2 class="details__actor__informations__web__role">
+                                Tony Stark / Iron Man
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            <div class="overflow__web">
+                <div class="overflow__web__movie">
+                    <a href="#">
+                        <img src="./assets_detail_film/images/ironman1.svg" alt="Affiche film 1" class="overflow__movie__web__img">
+                    </a>
+
+                    <a href="#">
+                        <img src="./assets_detail_film/images/ironman2.svg" alt="Affiche film 2" class="overflow__movie__web__img">
+                    </a>
+
+                    <a href="#">
+                        <img src="./assets_detail_film/images/ironman3.svg" alt="Affiche film 3" class="overflow__movie__web__img">
+                    </a>
+
+                    <a href="#">
+                        <img src="./assets_detail_film/images/avengers1.svg" alt="Affiche film 4" class="overflow__movie__web__img">
+                    </a>
+
+                    <a href="#">
+                        <img src="./assets_detail_film/images/avengers2.svg" alt="Affiche film 5" class="overflow__movie__web__img">
+                    </a>
+
+                    <a href="#">
+                        <img src="./assets_detail_film/images/avengers3.svg" alt="Affiche film 6" class="overflow__movie__web__img">
+                    </a>
+
+                    <a href="#">
+                        <img src="./assets_detail_film/images/avengers4.svg" alt="Affiche film 7" class="overflow__movie__web__img">
+                    </a>
+
+                    <a href="#">
+                        <img src="./assets_detail_film/images/captainamerica2.svg" alt="Affiche film 8" class="overflow__movie__web__img">
+                    </a>
+
+                    <a href="#">
+                        <img src="./assets_detail_film/images/spiderman1.svg" alt="Affiche film 9" class="overflow__movie__web__img">
+                    </a>
+                
+                </div>
+                <div class="overflow__web__arrows">
+                    <img src="./assets_detail_film/images/arrow-left.svg" alt="" class="overflow__web__arrows__left">
+                    <img src="./assets_detail_film/images/arrow-right.svg" alt="" class="overflow__web__arrows__right">
+                </div>
+            </div>
+
+        <div class="details__film__mobile">
+            <h1 class="details__film__mobile__genre">
+                Aventure, Science-Fiction, Action
+            </h1>
+            <h2 class="details__film__mobile__title">
+                Avengers : Endgame
+            </h2>
+            <h3 class="details__film__mobile__years">
+                2019
+            </h3>
+            <p class="details__film__mobile__synopsis">
+                Après leur défaite face au Titan Thanos qui dans le film précédent s'est approprié toutes les pierres du Gant de l'infini , les Avengers et les Gardiens de la Galaxie ayant survécu à son claquement de doigts qui a pulvérisé « la moitié de toute forme de vie dans l'Univers », Captain America, Thor, Bruce Banner, Natasha Romanoff, War Machine, Tony Stark, Nébula et Rocket, vont essayer de trouver une solution pour ramener leurs coéquipiers disparus et vaincre Thanos en se faisant aider par Ronin alias Clint Barton, Captain Marvel et Ant-Man.
+            </p>
+        </div>
+
+        <div class="details__actor__mobile">
+            <div class="details__actor__mobile__informations">
+                <a href="#">
+                    <img class="detail__actor__informations__mobile__img" src="./assets_detail_film/images/actor.svg" alt="Portrait de l'acteur Robert Downey Jr.">
+                </a>
+                <div class="details__actor__informations__mobile__text">
+                    <h1 class="details__actor__informations__mobile__name">
+                        Robert Downey Jr.
+                    </h1>
+                    <h2 class="details__actor__informations__mobile__role">
+                        Tony Stark / Iron Man
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="overflow__mobile">
+            <div class="overflow__mobile__movie">
+                <a href="#">
+                    <img src="./assets_detail_film/images/ironman1.svg" alt="Affiche film 1" class="overflow__movie__mobile__img">
+                </a>
+
+                <a href="#">
+                    <img src="./assets_detail_film/images/ironman2.svg" alt="Affiche film 2" class="overflow__movie__mobile__img">
+                </a>
+
+                <a href="#">
+                    <img src="./assets_detail_film/images/ironman3.svg" alt="Affiche film 3" class="overflow__movie__mobile__img">
+                </a>
+
+                <a href="#">
+                    <img src="./assets_detail_film/images/avengers1.svg" alt="Affiche film 4" class="overflow__movie__mobile__img">
+                </a>
+
+                <a href="#">
+                    <img src="./assets_detail_film/images/avengers2.svg" alt="Affiche film 5" class="overflow__movie__mobile__img">
+                </a>
+
+                <a href="#">
+                    <img src="./assets_detail_film/images/avengers3.svg" alt="Affiche film 6" class="overflow__movie__mobile__img">
+                </a>
+
+                <a href="#">
+                    <img src="./assets_detail_film/images/avengers4.svg" alt="Affiche film 7" class="overflow__movie__mobile__img">
+                </a>
+
+                <a href="#">
+                    <img src="./assets_detail_film/images/captainamerica2.svg" alt="Affiche film 8" class="overflow__movie__mobile__img">
+                </a>
+
+                <a href="#">
+                    <img src="./assets_detail_film/images/spiderman1.svg" alt="Affiche film 9" class="overflow__movie__mobile__img">
+                </a>
+
+            </div>
+            <div class="overflow__mobile__arrows">
+                <img src="./assets_detail_film/images/arrow-left.svg" alt="" class="overflow__mobile__arrows__left">
+                <img src="./assets_detail_film/images/arrow-right.svg" alt="" class="overflow__mobile__arrows__right">
+            </div>
+        </div>
+    </main>
+
+    <footer> 
+        <div class="links__footer">
+            <h2>&copy;Stellar</h2>
+            <div class="links__footer__a">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Cond. Gén. Vente</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
