@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/series.css">
+    <link rel="stylesheet" href="assets/css/series-desktop.css">
+    <script type="text/javascript" src="https://api.themoviedb.org/3/movie/550?api_key=d31b3c78860c89e16a7dc07680568b1c"></script>
+    <script src="assets/js/series.js"></script>
+    <title>Résultats recherche</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__right">
+            <img class="header__right--form" src="assets/images/header-right.svg" alt="forme géométrique">
+        </div>
+        <div class="header__logo">
+            <a href="#"><img class="header__logo--logo" src="assets/images/stellar.svg" alt="logo"></a>
+            <a href="#"><img class="header__logo--logo--mobile" src="assets/images/stellar-mobile.svg" alt="logo"></a>
+        </div>
+        <div class="header__class">
+            <button class="header__class--button">Genres <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg></button>
+        </div>
+        <div class="header__user">
+            <button class="header__user--connect"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg></button>
+        </div>
+        <div class="header__search">
+            <input class="header__search--input" type="search" placeholder="Recherche_/" name="search"><svg
+                class="header__search--input--glass" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="header__search--input--burger" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+        </div>
+        <div class="header__circle">
+            <img class="header__circle" src="assets/images/circle-right-mobile.svg" alt="rond coloré">
+        </div>
+    </header>
+    <h1>Action</h1>
+    <div class="picture__back">
+
+        <div class="picture__back--firstLine">
+            <img class="img--first"
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3e0xw0btFZmtTSuXkpdtgf3jtqv.jpg"
+                alt="affiche film / série">
+            <img class="img--first"
+                src="https://s1.qwant.com/thumbr/474x701/0/6/08fbb4c512d27fb2f44479a4b8903628cd56b9e3abda54fe926b40c61c2feb/th.jpg?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.0JSGUt_UrWW_wvvoBroxbAHaK9%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--first"
+                src="https://s1.qwant.com/thumbr/474x711/8/7/cc69faab64139928cdf11701fe974d73b509dca707ee1dc9d38be4bc53d289/th.jpg?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.rggd_jTe-pV3te8EyPwMDwHaLH%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--first"
+                src=" https://s2.qwant.com/thumbr/474x702/d/9/213595a14d3fab83a53a00cbc69ba6531a3a4daa7fa1d42f5013ef62f381b1/th.jpg?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.kGycQU9cDWGR33eFj7jV1AHaK-%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--first"
+                src="https://s1.qwant.com/thumbr/474x632/0/3/b16db778a516cc38b902de0c0d9257ecbded717b257ff9f33cff6f034ab49b/th.jpg?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.KI4MLll3VdlKoXVb854FEQHaJ4%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--two"
+                src="https://s2.qwant.com/thumbr/474x711/e/6/95c7c080055ba4aed83568c9d681c139c8576c36bf66039a02872c8a441bee/th.jpg?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.BQBh0iI1II98cse45LlZDAHaLH%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--two"
+                src="https://s1.qwant.com/thumbr/474x646/9/8/1523c22d0e1242f01d417cc3a8a41493aef3576a952db26588f436c17b800b/th.jpg?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.TF0Hnj9O8UzlwWmQGpW2dAHaKG%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--two"
+                src="https://s2.qwant.com/thumbr/474x592/6/c/d51aaef482c2c067870acff8dccf0e8c0ccbe75b92c6b7cc1e3609dc5f4d6f/th.jpg?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.WZQ_wWTjdZOP5NEVe5c5fAHaJQ%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--two"
+                src="https://s1.qwant.com/thumbr/474x711/a/1/a62dd84b6c4e8bded2ad95ff80c5c6de87ee6ab1d6d73bb9f36bcf01f17b87/th.jpg?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.P2ADIHTR0NYPKO-94Y9I7wHaLH%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--two"
+                src="https://s2.qwant.com/thumbr/474x632/d/2/8504fcff543de152d4b6489525d020c70fafb225e6c332502b9f8b76b51de8/th.jpg?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.MGFMrym-cG80FSnphk_IPgHaJ4%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+        </div>
+
+        <div class="picture__back--secondline">
+            <img class="img--secondOne"
+                src="https://s2.qwant.com/thumbr/474x711/e/6/95c7c080055ba4aed83568c9d681c139c8576c36bf66039a02872c8a441bee/th.jpg?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.BQBh0iI1II98cse45LlZDAHaLH%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--secondOne"
+                src="https://s1.qwant.com/thumbr/474x646/9/8/1523c22d0e1242f01d417cc3a8a41493aef3576a952db26588f436c17b800b/th.jpg?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.TF0Hnj9O8UzlwWmQGpW2dAHaKG%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--secondOne"
+                src="https://s2.qwant.com/thumbr/474x592/6/c/d51aaef482c2c067870acff8dccf0e8c0ccbe75b92c6b7cc1e3609dc5f4d6f/th.jpg?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.WZQ_wWTjdZOP5NEVe5c5fAHaJQ%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--secondOne"
+                src="https://s1.qwant.com/thumbr/474x711/a/1/a62dd84b6c4e8bded2ad95ff80c5c6de87ee6ab1d6d73bb9f36bcf01f17b87/th.jpg?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.P2ADIHTR0NYPKO-94Y9I7wHaLH%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+            <img class="img--secondOne"
+                src="https://s2.qwant.com/thumbr/474x632/d/2/8504fcff543de152d4b6489525d020c70fafb225e6c332502b9f8b76b51de8/th.jpg?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.MGFMrym-cG80FSnphk_IPgHaJ4%26pid%3DApi&q=0&b=1&p=0&a=0"
+                alt="affiche film / série">
+        </div>
+        <div class="picture__back--arrows">
+            <img class="picture__back--arrows--left" src="assets/images/fleche-left.svg" alt="flèche gauche">
+            <img class="picture__back--arrows--right" src="assets/images/fleche-right.svg" alt="flèche droite">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <nav class="footer__nav__mobile">
+            <ul class="footer__nav__mobile--ul">
+                <li class="footer__nav__mobile--ul--li"><svg class="footer__nav__mobile--ul--li--icons"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg></li>
+                <li class="footer__nav__mobile--ul--li"><svg class="footer__nav__mobile--ul--li--icons"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg></li>
+                <li class="footer__nav__mobile--ul--li"><svg class="footer__nav__mobile--ul--li--icons"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg></li>
+            </ul>
+        </nav>
+        <nav class="footer__navEnd">
+            <ul>
+                <li>&copy;Stellar</li>
+                <li>Mentions légales</li>
+                <li>Cond. Gén. Vente</li>
+            </ul>
+            <img class="footer__navEnd--img" src="assets/images/Groupe 77.svg" alt="image de fond fin de page">
+        </nav>
+    </footer>
+</body>
+
+</html>
